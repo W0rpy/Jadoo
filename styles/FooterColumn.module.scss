@@ -1,0 +1,41 @@
+.FooterColumn {
+   display: flex;
+   flex-direction: column;
+}
+
+.FooterBtn {
+   font-size: 21px;
+   font-weight: 700;
+   margin-bottom: 34px;
+   color: #080809;
+   display: flex;
+   background-color: inherit;
+   align-items: center;
+   transition: color 0.3s linear 0s;
+
+   &:hover {
+      color: #5E6282;
+      transition: color 0.3s linear 0s;
+   }
+
+   span {
+      margin-right: 5px;
+   }
+}
+
+.FooterLink {
+   color: inherit;
+   font-size: 18px;
+   transition: color 0.3s linear 0s;
+
+   &:hover {
+      color: #080809;
+      transition: color 0.3s linear 0s;
+   }
+}
+
+.FooterList {
+   li:not(:last-child) {
+      margin-bottom: 13px;
+   }
+}
