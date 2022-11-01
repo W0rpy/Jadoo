@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Destinations from '../components/Destinations';
 
 export default function Home() {
 
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Jadoo</title>
         <meta name="description" content="Jadoo" />
       </Head >
+      <Destinations />
     </div>
   )
 }

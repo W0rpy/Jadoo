@@ -9,7 +9,7 @@ function Header() {
    const [burger, setBurger] = useState(false);
    const activeBurger = [styles.Burger];
    if (burger) {
-      activeBurger.push(styles.active)
+      activeBurger.push(styles.active);;
    }
 
    return (

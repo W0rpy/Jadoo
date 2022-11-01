@@ -3,6 +3,12 @@
    flex-direction: column;
 }
 
+.ArrowDown {
+   width: 20px;
+   height: 15px;
+   display: none;
+}
+
 .FooterBtn {
    font-size: 21px;
    font-weight: 700;
@@ -16,10 +22,6 @@
    &:hover {
       color: #5E6282;
       transition: color 0.3s linear 0s;
-   }
-
-   span {
-      margin-right: 5px;
    }
 }
 
@@ -37,5 +39,26 @@
 .FooterList {
    li:not(:last-child) {
       margin-bottom: 13px;
+   }
+}
+
+@media (max-width: 575px) {
+   .FooterColumn {
+      flex: 0 1 100%;
+      margin-bottom: 20px;
+   }
+
+   .FooterBtn {
+      justify-content: space-between;
+
+      span {
+         line-height: 1;
+         margin-right: 5px;
+      }
+   }
+
+   .ArrowDown {
+      align-self: center;
+      display: block;
    }
 }
