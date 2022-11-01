@@ -1,0 +1,45 @@
+.ServicesCard {
+   max-width: 267px;
+   display: flex;
+   flex-direction: column;
+   padding: 2px 42px 0px 44px;
+   border-radius: 36px;
+   text-align: center;
+}
+
+.ServicesImage {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2px;
+   position: relative;
+
+   &::after {
+      position: absolute;
+      content: "";
+      background: #FFF1DA;
+      border-radius: 5px 10px 5px 18px;
+      height: 49px;
+      width: 50px;
+      top: 53px;
+      left: 54px;
+
+   }
+}
+
+.ServicesText {
+   color: #1E1D4C;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.35;
+   margin-bottom: 15px;
+}
+
+.ServicesSubtext {
+   line-height: 1.6;
+   margin-bottom: 45px;
+}
+
+.Plane {
+   z-index: 2;
+}
