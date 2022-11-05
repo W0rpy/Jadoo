@@ -3,13 +3,14 @@ import ContainerMain from '../components/ContainerMain';
 import NavBar from '../components/NavBar';
 import Image from 'next/image';
 import Link from 'next/link';
+import logo from '../public/images/logo_header.svg';
 import { useState } from 'react';
 function Header() {
 
    const [burger, setBurger] = useState(false);
    const activeBurger = [styles.Burger];
    if (burger) {
-      activeBurger.push(styles.active);;
+      activeBurger.push(styles.active);
    }
 
    return (
@@ -17,13 +18,13 @@ function Header() {
          <ContainerMain>
             <div className={styles.HeaderBody}>
                <div className={styles.HeaderLogo} >
-                  <Link href='/' onClick={() => { setBurger(false) }}>
+                  <Link href='/' onClick={() => { setBurger(false) }} className={styles.LogoLink}>
                      <Image
-                        src="/images/logo_header.svg"
-                        width={115}
-                        height={34}
+                        src={logo}
+                        fill
                         alt='Logo'
-                        priority={true}
+                        sizes='33vw'
+                        className={styles.LogoPicture}
                      />
                   </Link>
                </div>

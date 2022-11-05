@@ -7,6 +7,12 @@
    width: 20px;
    height: 15px;
    display: none;
+   transition: all 0.3s linear 0s;
+
+   &.active {
+      transform: rotate(180deg);
+      transition: all 0.3s linear 0s;
+   }
 }
 
 .FooterBtn {
@@ -37,6 +43,7 @@
 }
 
 .FooterList {
+
    li:not(:last-child) {
       margin-bottom: 13px;
    }
@@ -50,6 +57,7 @@
 
    .FooterBtn {
       justify-content: space-between;
+      margin-bottom: 10px;
 
       span {
          line-height: 1;
@@ -60,5 +68,14 @@
    .ArrowDown {
       align-self: center;
       display: block;
+   }
+
+   .FooterList {
+      display: none;
+
+      &.active {
+         display: block;
+
+      }
    }
 }

@@ -3,6 +3,10 @@ import ContainerMain from './ContainerMain';
 import ReusableTitle from './ReusableTitle';
 import Image from 'next/image';
 import Arrow from '../public/images/arrow_location.svg';
+import london from '../public/images/london.jpg';
+import rome from '../public/images/rome.jpg';
+import europe from '../public/images/europe.jpg';
+
 function Destinations() {
    return (
       <section className={styles.Destinations}>
@@ -13,7 +17,9 @@ function Destinations() {
                </div>
                <div className={styles.DestinationsContent}>
                   <div className={styles.DestinationsCard}>
-                     <div className={styles.CardImage}></div>
+                     <div className={styles.CardImage}>
+                        <Image width={314} height={326} alt="Rome" src={rome} className={styles.CardPicture} />
+                     </div>
                      <div className={styles.CardBody}>
                         <div className={styles.CardLocation}>
                            <div className={styles.CardPlace}> Rome, Italty</div>
@@ -28,7 +34,9 @@ function Destinations() {
                      </div>
                   </div>
                   <div className={styles.DestinationsCard}>
-                     <div className={styles.CardImage}></div>
+                     <div className={styles.CardImage}>
+                        <Image width={314} height={326} alt="London" src={london} className={styles.CardPicture} />
+                     </div>
                      <div className={styles.CardBody}>
                         <div className={styles.CardLocation}>
                            <div className={styles.CardPlace}>
@@ -49,7 +57,9 @@ function Destinations() {
                      </div>
                   </div>
                   <div className={styles.DestinationsCard}>
-                     <div className={styles.CardImage}></div>
+                     <div className={styles.CardImage}>
+                        <Image width={314} height={326} alt="Europe" src={europe} className={styles.CardPicture} />
+                     </div>
                      <div className={styles.CardBody}>
                         <div className={styles.CardLocation}>
                            <div className={styles.CardPlace}>

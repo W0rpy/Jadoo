@@ -88,7 +88,7 @@
    .Content {
       grid-template-columns: 1fr 1fr;
       column-gap: 50px;
-      margin-bottom: 84px;
+      margin-bottom: 70px;
       grid-template-rows: auto auto;
       row-gap: 50px;
    }
@@ -109,11 +109,36 @@
    .FooterNetworks {
       justify-self: end;
    }
+
+   .FooterBlock {
+      padding: 80px 35px 0px 35px;
+   }
+
+   .JadooCo {
+      margin-bottom: 50px;
+   }
+
+   .Logo {
+      text-align: center;
+   }
+
 }
 
 @media (max-width: 991.98px) {
    .FooterItems {
       justify-content: space-between;
+   }
+
+   .Logo {
+      text-align: left;
+   }
+
+   .JadooCo {
+      margin-bottom: 40px;
+   }
+
+   .FooterBlock {
+      padding: 70px 25px 0px 25px;
    }
 }
 
@@ -123,12 +148,21 @@
       margin-bottom: 50px;
       row-gap: 40px;
    }
+
+   .JadooCo {
+      margin-bottom: 30px;
+   }
 }
 
 @media (max-width: 575px) {
    .Content {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;
+      margin-bottom: 40px;
+   }
+
+   .JadooCo {
+      margin-bottom: 10px;
    }
 
    .FooterItems {

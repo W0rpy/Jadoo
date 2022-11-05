@@ -32,6 +32,13 @@
    z-index: 2;
 }
 
+.LogoLink {
+   height: 34px;
+   position: relative;
+   width: 115px;
+   display: inline-block;
+}
+
 .HeaderSignUp {
    margin-right: 42px;
    position: relative;
@@ -128,6 +135,10 @@
       padding: 40px 0px 18px;
    }
 
+   .Header {
+      min-height: 100px;
+   }
+
 }
 
 @media (max-width: 991.98px) {
@@ -138,6 +149,98 @@
    .HeaderLanguage {
       margin-right: 40px;
    }
+
+   .HeaderBody {
+      padding: 30px 0px 18px;
+   }
+
+   .Header {
+      min-height: 90px;
+   }
 }
 
-@media (max-width: 766.98px) {}
+@media (max-width: 766.98px) {
+   .HeaderBody {
+      padding: 20px 0px 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .HeaderLogin {
+      margin-right: 20px;
+   }
+
+   .Header {
+      min-height: 80px;
+   }
+
+   .HeaderSignUp {
+      margin-right: 20px;
+   }
+
+   .SignUpItem {
+      padding: 5px 15px;
+   }
+
+   .HeaderLanguage {
+      margin-right: 20px;
+   }
+
+   .LogoLink {
+      height: 30px;
+      width: 100px;
+   }
+
+}
+
+@media (max-width: 420px) {
+   .LogoLink {
+      height: 25px;
+      width: 80px;
+   }
+
+   .LoginItem {
+      font-size: 15px;
+   }
+
+   .SignUpItem {
+      font-size: 15px;
+      padding: 4px 10px;
+   }
+
+   .Header {
+      min-height: 75px;
+   }
+
+   .ChangeLanguage {
+      span {
+         margin-right: 3px;
+         font-size: 15px;
+      }
+   }
+
+}
+
+@media (max-width: 374.98px) {
+   .HeaderLogin {
+      margin-right: 16px;
+   }
+
+   .HeaderSignUp {
+      margin-right: 16px;
+   }
+
+   .SignUpItem {
+      padding: 4px 8px;
+   }
+
+   .HeaderLanguage {
+      margin-right: 16px;
+   }
+
+   .LogoLink {
+      height: 25px;
+      width: 67px;
+   }
+
+}

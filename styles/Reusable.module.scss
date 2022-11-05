@@ -19,3 +19,31 @@
    font-weight: 700;
    line-height: 1.3;
 }
+
+@media (max-width:991.98px) {
+   .Subtitle {
+      margin-bottom: 5px;
+      font-size: 15px;
+   }
+
+   .Title {
+      font-size: 40px;
+   }
+}
+
+@media (max-width:766.98px) {
+   .Subtitle {
+      margin-bottom: 5px;
+      font-size: 15px;
+   }
+
+   .Title {
+      font-size: 30px;
+   }
+}
+
+@media (max-width:480px) {
+   .Title {
+      font-size: 25px;
+   }
+}
