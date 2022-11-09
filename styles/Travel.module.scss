@@ -4,6 +4,20 @@
    align-items: center;
    padding: 24px 0px 0px 0px;
    margin-bottom: 75px;
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      height: 496px;
+      width: 478px;
+      border-radius: 50%;
+      background: #D5AEE4;
+      opacity: 0.3;
+      filter: blur(75px);
+      left: -551px;
+      top: -250px;
+   }
 }
 
 .TravelContainer {
@@ -90,6 +104,13 @@
    border-radius: 10px;
    color: #FFFFFF;
    margin-right: 60px;
+   transition: all 0.3s linear 0s;
+
+   &:hover {
+      background: #DF6951;
+      transition: all 0.3s linear 0s;
+      box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+   }
 }
 
 .TravelButton {
@@ -103,6 +124,13 @@
    background: #DF6951;
    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
    margin-right: 21px;
+   transition: all 0.3s linear 0s;
+
+   &:hover {
+      background: #F1A501;
+      transition: all 0.3s linear 0s;
+      box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+   }
 }
 
 .ButtonTriangle {
@@ -151,6 +179,11 @@
    .TravelContent {
       flex-wrap: wrap;
       margin-bottom: 30px;
+
+      &::before {
+         left: -500px;
+         top: -200px;
+      }
    }
 
    .TravelItems {
@@ -227,6 +260,13 @@
       top: 74px;
       left: 55px;
    }
+
+   .TravelContent {
+      &::before {
+         left: -440px;
+         top: -160px;
+      }
+   }
 }
 
 @media (max-width: 676px) {
@@ -270,7 +310,7 @@
 
    .TravelContent {
       padding: 20px 0px 0px 0px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
    }
 
    .TravelItems {

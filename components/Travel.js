@@ -29,7 +29,7 @@ function Travel() {
                <div className={styles.TravelImage}>
                   <div className={styles.ImageShell}>
                      <Image src={plane} width='auto' height='auto' alt='Plane' className={styles.Plane} />
-                     <Image src={traveller} className={styles.Picture} alt='Traveller' fill sizes="(max-width: 1199.98px) 100vw, 33vw" />
+                     <Image src={traveller} className={styles.Picture} alt='Traveller' fill sizes="(max-width: 1199.98px) 100vw, 33vw" priority />
                   </div>
                </div>
             </div>

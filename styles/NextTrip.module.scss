@@ -1,0 +1,254 @@
+.NextTripSteps {
+   padding: 186px 35px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 100px;
+}
+
+.NextTripContent {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 50%;
+   max-width: 511px;
+}
+
+.NextTripSubtitle {
+   margin-bottom: 15px;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.5;
+}
+
+.NextTripTitle {
+   color: #14183E;
+   margin-bottom: 31px;
+   font-family: Volkhov;
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 1.3;
+   text-transform: capitalize;
+}
+
+.NextTripCard {
+   display: flex;
+   align-items: center;
+
+   &:not(:last-child) {
+      margin-bottom: 48px;
+   }
+}
+
+.CardIcon {
+   margin-right: 21px;
+}
+
+.CardBody {
+   display: flex;
+   flex-direction: column;
+}
+
+.CardTitle {
+   margin-bottom: 4px;
+   font-weight: 700;
+}
+
+.CardSubTitle {
+   font-weight: 400;
+   max-width: 327px;
+}
+
+.NextTripImages {
+   flex: 0 1 50%;
+   justify-content: center;
+   display: flex;
+}
+
+.Photo {
+   border-radius: 26px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.RomeTrip {
+   border-radius: 18px;
+   position: absolute;
+   bottom: 53px;
+   z-index: 3;
+   right: 0;
+   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.BlueDecore {
+   position: absolute;
+   top: 0;
+   left: 60px;
+   background: #59B1E6;
+   opacity: 0.4;
+   filter: blur(75px);
+}
+
+.ImagesContainer {
+   width: 485px;
+   height: 459px;
+   position: relative;
+}
+
+@media (max-width:1199.98px) {
+   .NextTripSteps {
+      padding: 130px 35px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+   }
+
+   .Photo {
+      bottom: 0;
+      left: 0;
+      width: 330px;
+      height: 350px;
+   }
+
+   .RomeTrip {
+      bottom: 53px;
+      right: 0;
+      width: 221px;
+      height: 110px;
+
+   }
+
+   .ImagesContainer {
+      width: 420px;
+      height: 422px;
+   }
+
+   .NextTripSubtitle {
+      margin-bottom: 10px;
+   }
+
+   .NextTripTitle {
+      margin-bottom: 24px;
+      font-size: 40px;
+   }
+}
+
+@media (max-width:991.98px) {
+   .NextTripSteps {
+      padding: 110px 25px 0px;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: stretch;
+      margin-bottom: 40px;
+   }
+
+   .NextTripContent {
+      flex: 0 1 100%;
+      max-width: 100%;
+      align-items: center;
+      margin-bottom: 15px;
+   }
+
+   .NextTripSubtitle {
+      margin-bottom: 10px;
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .NextTripTitle {
+      width: 80%;
+      text-align: center;
+   }
+
+   .CardSubTitle {
+      max-width: 100%;
+   }
+}
+
+@media (max-width:766.98px) {
+   .NextTripTitle {
+      font-size: 30px;
+      width: 100%;
+   }
+
+   .NextTripCard {
+      &:not(:last-child) {
+         margin-bottom: 25px;
+      }
+   }
+
+   .NextTripContent {
+      margin-bottom: 10px;
+   }
+
+   .NextTripSteps {
+      padding: 80px 0px 0px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width:544px) {
+   .NextTripTitle {
+      width: 80%;
+   }
+}
+
+@media (max-width:480px) {
+   .NextTripTitle {
+      width: 90%;
+   }
+
+   .NextTripTitle {
+      font-size: 25px;
+   }
+
+   .CardSubTitle {
+      font-size: 14px;
+   }
+
+   .NextTripSteps {
+      padding: 70px 0px 0px;
+   }
+
+   .ImagesContainer {
+      width: 100%;
+      height: 400px;
+   }
+
+   .CardTitle {
+      font-size: 14px;
+   }
+
+}
+
+@media (max-width:430px) {
+
+   .BlueDecore {
+      top: 0;
+      left: 0;
+      width: 100%;
+   }
+}
+
+@media (max-width:374.98px) {
+   .Photo {
+      bottom: 0;
+      left: 0;
+      width: 300px;
+      height: 310px;
+   }
+
+   .RomeTrip {
+      bottom: 33px;
+      right: 0;
+      width: 210px;
+      height: 100px;
+   }
+
+   .ImagesContainer {
+      height: 350px;
+   }
+}

@@ -2,6 +2,7 @@ import styles from '../styles/Footer.module.scss';
 import ContainerMain from '../components/ContainerMain';
 import FooterColumn from './FooterColumn';
 import Image from 'next/image';
+import Link from 'next/link';
 function Footer() {
    const columnFirst = ['About', 'Careers', 'Mobile'];
    const columnSecond = ['Help/FAQ', 'Press', 'Affilates'];
@@ -25,19 +26,19 @@ function Footer() {
                   </div>
                   <div className={styles.FooterNetworks}>
                      <div className={styles.FooterImages}>
-                        <div className={styles.ImageFirst}><Image alt='Icon' src='/images/facebook.svg' width={6} height={13} /></div>
-                        <div className={styles.ImageSecond}><Image alt='Icon' src='/images/instagram.svg' width={16} height={16} /></div>
-                        <div className={styles.ImageFirst}><Image alt='Icon' src='/images/twitter.svg' width={16} height={13} /></div>
+                        <Link legacyBehavior href='##'><a className={styles.ImageFirst}><Image alt='Icon' src='/images/facebook.svg' width={6} height={13} /></a></Link>
+                        <Link legacyBehavior href='##'><a className={styles.ImageSecond}><Image alt='Icon' src='/images/instagram.svg' width={16} height={16} /></a></Link>
+                        <Link legacyBehavior href='##'><a className={styles.ImageFirst}><Image alt='Icon' src='/images/twitter.svg' width={16} height={13} /></a></Link>
                      </div>
                      <div className={styles.FooterNetworksTitle}>
                         Discover our app
                      </div>
                      <div className={styles.FooterNetworksItems}>
                         <div className={styles.GooglePlay}>
-                           <Image alt='Google Play' src='/images/google.png' width={107} height={35} />
+                           <Link href='##'><Image alt='Google Play' src='/images/google.png' width={107} height={35} /></Link>
                         </div>
                         <div className={styles.AppStore}>
-                           <Image alt='App store' src='/images/appstore.png' width={100} height={35} />
+                           <Link href='##'>  <Image alt='App store' src='/images/appstore.png' width={100} height={35} /></Link>
                         </div>
                      </div>
                   </div>
@@ -45,9 +46,9 @@ function Footer() {
                <div className={styles.JadooCo}>
                   <span>All rights reserved@jadoo.co</span>
                </div>
-            </div>
-         </ContainerMain>
-      </footer>
+            </div >
+         </ContainerMain >
+      </footer >
    )
 }
 export default Footer;

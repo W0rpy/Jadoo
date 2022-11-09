@@ -1,0 +1,29 @@
+.PopapWrapper {
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 60;
+   pointer-events: none;
+}
+
+.PopapWrapper.active {
+   opacity: 1;
+   pointer-events: all;
+}
+
+.PopapBody {
+   padding: 30px;
+   width: 300px;
+   height: 330px;
+   z-index: 60;
+   opacity: 1;
+   border-radius: 10px;
+   background-color: #FFFFFF;
+}

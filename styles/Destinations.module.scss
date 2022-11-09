@@ -8,8 +8,8 @@
 
 .DestinationsContent {
    display: flex;
-   gap: 35px;
-   justify-content: space-between;
+   gap: 30px;
+   justify-content: space-evenly;
    flex-wrap: wrap;
 }
 
@@ -19,6 +19,18 @@
    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
    border-radius: 24px;
    background-color: #FFFFFF;
+   position: relative;
+
+   &:last-child::before {
+      content: "";
+      position: absolute;
+      right: -47px;
+      bottom: 47px;
+      background-image: url('../public/images/spiral.svg');
+      width: 98px;
+      height: 254px;
+      z-index: -1;
+   }
 }
 
 .CardPicture {
@@ -29,6 +41,8 @@
    padding: 27px 20px 0px 20px;
    display: flex;
    flex-direction: column;
+   background-color: #FFFFFF;
+   border-radius: 24px;
 }
 
 .CardLocation {
@@ -42,4 +56,89 @@
    margin-bottom: 42px;
    display: flex;
    align-items: center;
+}
+
+@media (max-width:1199.98px) {
+   .DestinationsContent {
+      gap: 10px;
+   }
+
+   .CardPicture {
+      width: 304px;
+      height: 316px;
+   }
+
+   .DestinationsCard {
+
+      &:last-child::before {
+         content: "";
+         display: none;
+      }
+   }
+}
+
+@media (max-width:991.98px) {
+   .DestinationsContent {
+      justify-content: space-between;
+   }
+
+   .DestinationsCard:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   .DestinationsTitle {
+      margin-bottom: 50px;
+   }
+}
+
+@media (max-width:766.98px) {
+   .CardBody {
+      padding: 20px 15px 0px 15px;
+
+   }
+
+   .CardTour {
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width:676px) {
+   .DestinationsContent {
+      justify-content: space-evenly;
+   }
+
+   .DestinationsTitle {
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width:480px) {
+
+   .DestinationsTitle {
+      margin-bottom: 30px;
+   }
+
+   .CardPicture {
+      width: 300px;
+      height: 310px;
+   }
+
+   .DestinationsCard:not(:last-child) {
+      margin-bottom: 15px;
+   }
+
+   .CardBody {
+      padding: 15px 10px 0px 10px;
+
+   }
+
+   .CardLocation {
+      font-size: 18px;
+      margin-bottom: 14px;
+   }
+
+   .CardTour {
+      margin-bottom: 20px;
+   }
+
 }

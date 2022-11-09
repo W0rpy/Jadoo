@@ -1,0 +1,327 @@
+.JadooBody {
+   padding: 13px 20px 0px 0px;
+   margin-bottom: 70px;
+   position: relative;
+
+   &::before {
+      position: absolute;
+      content: "";
+      top: 0px;
+      right: 1px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #5E3BE1;
+      background-image: url('../public/images/arrow_send.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 5;
+
+   }
+
+}
+
+.JadooDecore {
+   position: relative;
+
+   &::after {
+      position: absolute;
+      content: "";
+      top: 0px;
+      right: 0px;
+      background-image: url('../public/images/ellipsefirst.svg');
+      background-repeat: no-repeat;
+      width: 207px;
+      height: 274px;
+      z-index: -1;
+      opacity: 0.2;
+   }
+
+   &::before {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 23.5px;
+      background-image: url('../public/images/ellipsesecond.svg');
+      background-repeat: no-repeat;
+      width: 390px;
+      height: 282.4px;
+      z-index: -1;
+      opacity: 0.2;
+   }
+}
+
+.Form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 79px 0px 0px 0px;
+   background-color: rgba(223, 215, 249, 0.2);
+   border-radius: 129px 20px 20px 20px;
+}
+
+.FormText {
+   font-size: 33px;
+   font-weight: 600;
+   line-height: 1.6;
+   text-align: center;
+   margin-bottom: 74px;
+   max-width: 859px;
+}
+
+.Subscribe {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 78px;
+}
+
+.SubscribeInput {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.2;
+   color: #39425D;
+   margin-right: 24px;
+   background-color: #FFFFFF;
+   padding: 25px 0px 25px 66px;
+   min-width: 421px;
+   border-radius: 10px;
+   background-image: url('../public/images/message.svg');
+   background-repeat: no-repeat;
+   background-position: 31px 50%;
+
+}
+
+.SubscribeButton {
+   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+   font-size: 17px;
+   font-weight: 600;
+   line-height: 1.35;
+   width: 180px;
+   min-height: 68px;
+   position: relative;
+
+   &:active {
+      top: 4px;
+   }
+
+   &:hover {
+      background: #DF6951;
+   }
+}
+
+@media (max-width:1199.98px) {
+   .FormText {
+      font-size: 25px;
+      max-width: 700px;
+   }
+
+   .Form {
+      padding: 60px 0px 0px 0px;
+   }
+
+   .SubscribeInput {
+      min-width: 400px;
+   }
+
+   .Subscribe {
+      margin-bottom: 60px;
+   }
+
+   .JadooBody {
+      margin-bottom: 50px;
+   }
+}
+
+@media (max-width:991.98px) {
+   .SubscribeButton {
+      width: 160px;
+      min-height: 60px;
+   }
+
+   .SubscribeInput {
+      padding: 20px 0px 20px 66px;
+   }
+
+   .FormText {
+      font-size: 25px;
+      margin-bottom: 60px;
+      max-width: 600px;
+   }
+
+   .JadooBody {
+
+      &::before {
+         width: 60px;
+         height: 60px;
+         background-size: 38px 36px;
+      }
+
+   }
+}
+
+@media (max-width:766.98px) {
+   .Subscribe {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .SubscribeInput {
+      margin-bottom: 20px;
+      width: 100%;
+      margin-right: 0px;
+   }
+
+   .Form {
+      align-items: flex-start;
+      padding: 50px 0px 0px 20px;
+   }
+
+   .FormText {
+      font-size: 20px;
+      margin-bottom: 50px;
+      max-width: 600px;
+   }
+}
+
+@media (max-width:676px) {
+   .FormText {
+      margin-bottom: 30px;
+      max-width: 500px;
+   }
+
+   .Subscribe {
+      margin-bottom: 50px;
+   }
+}
+
+@media (max-width:530px) {
+   .Form {
+      padding: 40px 20px 0px 30px;
+      border-radius: 100px 20px 20px 20px;
+   }
+
+   .JadooBody {
+      margin-bottom: 40px;
+
+      &::before {
+         width: 50px;
+         height: 50px;
+         background-size: 30px 28px;
+      }
+
+   }
+
+   .SubscribeButton {
+      width: 140px;
+      min-height: 50px;
+   }
+
+   .SubscribeInput {
+      padding: 17px 0px 17px 66px;
+   }
+
+   .FormText {
+      font-size: 18px;
+      max-width: 400px;
+   }
+
+}
+
+@media (max-width:480px) {
+   .Form {
+      padding: 30px 20px 0px 30px;
+      border-radius: 90px 20px 20px 20px;
+   }
+
+   .SubscribeButton {
+      width: 130px;
+      min-height: 44px;
+   }
+
+   .SubscribeInput {
+      padding: 14px 0px 14px 66px;
+   }
+
+   .FormText {
+      max-width: 350px;
+      margin-bottom: 20px;
+   }
+
+   .JadooBody {
+      margin-bottom: 20px;
+   }
+
+   .SubscribeInput {
+      min-width: 300px;
+   }
+
+   .Subscribe {
+      margin-bottom: 40px;
+   }
+
+   .JadooDecore {
+
+      &::after {
+         width: 107px;
+         height: 260px;
+      }
+
+      &::before {
+         width: 290px;
+         height: 250px;
+      }
+   }
+
+}
+
+@media (max-width:390px) {
+   .JadooDecore {
+
+      &::after {
+         width: 107px;
+         height: 240px;
+      }
+
+      &::before {
+         width: 230px;
+         height: 230px;
+      }
+   }
+
+   .Subscribe {
+      margin-bottom: 30px;
+   }
+
+   .SubscribeInput {
+      min-width: 250px;
+   }
+
+   .FormText {
+      max-width: 300px;
+      font-size: 14px;
+      text-align: left;
+      line-height: 1.3;
+      margin-bottom: 15px;
+   }
+
+   .Form {
+      padding: 20px 10px 0px 15px;
+      border-radius: 50px 20px 20px 20px;
+   }
+
+   .JadooBody {
+      margin-bottom: 10px;
+
+      &::before {
+         width: 40px;
+         height: 40px;
+         background-size: 25px 23px;
+      }
+   }
+}

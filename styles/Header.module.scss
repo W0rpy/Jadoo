@@ -12,13 +12,20 @@
 .HeaderLogin {
    margin-right: 52px;
    position: relative;
-   z-index: 2;
+   z-index: 50;
 }
 
 .LoginItem {
    color: #212832;
    font-size: 17px;
    line-height: 1.3;
+   transition: color 0.3s linear 0s;
+   background-color: inherit;
+
+   &:hover {
+      color: #DF6951;
+      transition: color 0.3s linear 0s;
+   }
 }
 
 .HeaderNav {
@@ -29,7 +36,7 @@
 
 .HeaderLogo {
    position: relative;
-   z-index: 2;
+   z-index: 56;
 }
 
 .LogoLink {
@@ -42,12 +49,12 @@
 .HeaderSignUp {
    margin-right: 42px;
    position: relative;
-   z-index: 2;
+   z-index: 50;
 }
 
 .HeaderLanguage {
    position: relative;
-   z-index: 2;
+   z-index: 50;
 }
 
 .SignUpItem {
@@ -59,6 +66,13 @@
    padding: 9px 21px;
    display: flex;
    justify-content: center;
+   transition: all 0.3s linear 0s;
+
+   &:hover {
+      transition: all 0.3s linear 0s;
+      color: #FFFFFF;
+      background-color: #DF6951;
+   }
 }
 
 .ChangeLanguage {
@@ -71,6 +85,12 @@
       font-size: 17px;
       line-height: 1.3;
       color: #212832;
+      transition: color 0.3s linear 0s;
+
+      &:hover {
+         color: #DF6951;
+         transition: color 0.3s linear 0s;
+      }
    }
 }
 
@@ -80,7 +100,7 @@
    position: relative;
    background-color: inherit;
    display: none;
-   z-index: 2;
+   z-index: 50;
 
    &.active span:nth-child(2) {
       opacity: 0;
@@ -118,6 +138,77 @@
 
       &:nth-child(2) {
          top: 9px;
+      }
+   }
+}
+
+.PopapForm {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.PopapText {
+   font-weight: 700;
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.PopapInput {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.2;
+   color: #39425D;
+   background-color: #FFFFFF;
+   padding: 15px 0px 15px 20px;
+   width: 100%;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #39425D;
+}
+
+.PopapBtn {
+   background-color: #F1A501;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+   font-size: 17px;
+   font-weight: 600;
+   line-height: 1.35;
+   width: 140px;
+   min-height: 50px;
+   transition: all 0.3s linear 0s;
+
+   &:hover {
+      transition: background-color 0.3s linear 0s;
+      background-color: #DF6951;
+   }
+}
+
+.BtnClose {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: inherit;
+   width: 15px;
+   height: 15px;
+
+   span {
+      position: absolute;
+      width: 100%;
+      background-color: #39425D;
+      left: 0;
+      top: 0;
+      height: 2px;
+
+      &:first-child {
+         transform: rotate(45deg);
+      }
+
+      &:last-child {
+         transform: rotate(-45deg);
       }
    }
 }

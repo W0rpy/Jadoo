@@ -95,3 +95,37 @@ h6 {
 .main {
    flex: 1 1 auto;
 }
+
+.swiper-button-prev:after {
+   display: none;
+}
+
+.swiper-button-next:after {
+   display: none;
+}
+
+.slider-controls .swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+}
+
+
+.slider-controls .swiper-pagination-bullet-active {
+   background-color: black;
+}
+
+.slider-controls {
+   display: flex;
+   justify-content: space-between;
+   max-width: 89px;
+}
+
+body.lock {
+   overflow: hidden;
+}
+
+@media (max-width:1199.98px) {
+   .slider-controls {
+      display: none;
+   }
+}
